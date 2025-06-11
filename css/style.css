@@ -1,0 +1,352 @@
+:root {
+    --main-color: #046875;
+    --main-color-2: #a8b4b6;
+    --main-transition: all 0.5s;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: cairo;
+    src: url("../fonts/Alexandria-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: cairo;
+    /* direction: rtl; */
+}
+
+.demo {
+    background-image: url(../image/background-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+/* Start Navpar */
+nav {
+    background-color: none;
+    /* background-color: #785a5a; */
+    color: #ffffff !important;
+    border-bottom: 1px solid#fff;
+    position: fixed;
+    width: 100%;
+    z-index: 100000000000;
+    border-radius: 10px;
+}
+
+nav img {
+    width: 100px;
+    height: 55px;
+}
+
+nav .icon a {
+    margin-left: 20px;
+    font-size: 20px;
+    color: red;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.letter-spacing {
+    background-color: transparent;
+    color: #ffffff;
+    transition: 0.5s;
+    border: 0.2px solid red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.letter-spacing:hover {
+    color: none;
+    background-color: none;
+}
+
+/* End Navpar */
+
+/* Start Header*/
+header {
+    background-image: url(../image/background-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    align-items: center;
+    min-height: 89vh;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+.header .auto {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    margin-left: 200px;
+    margin-top: 230px;
+}
+
+.header .auto span {
+    color: orange;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.header .text {
+    font-size: 10px;
+    width: 60%;
+    line-height: 25px;
+}
+
+.btns {
+    margin-left: 185px;
+}
+
+.btns .btn {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    width: 200px;
+    margin: 10px;
+    transition: 0.5s;
+    background-color: #222;
+}
+
+.btns .btn:hover {
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+
+#active {
+    background-color: transparent;
+    color: #ffffff;
+    transition: 0.5s;
+    border: 0.2px solid red;
+}
+
+
+#active:hover {
+    color: #ffffff;
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+
+/* icon */
+.icon a {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.icon a:hover {
+    color: var(--main-color);
+}
+
+/* End Header*/
+/* ============================================ */
+/* Start Review */
+
+
+.testimonial-card {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.hearts {
+    color: orange;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Black arrow controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 60% 60%;
+}
+
+@media (max-width: 768px) {
+    .carousel .carousel-item {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.review .text-black {
+    /* margin: 10px; */
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+/* End Review */
+
+/* Start Footer */
+
+.footer {
+    /* padding-top: calc(var(--section-padding) / 2);
+    padding-bottom: calc(var(--section-padding) / 2); */
+    background-image: url("../image/subscribe.jpg");
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.footer img{
+    width: 150px;
+    height: 150px;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+
+.footer .container {
+    position: relative;
+}
+
+.footer img {
+    margin-bottom: 20px;
+}
+
+
+.footer p:not(.copyright) {
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.footer p {
+    margin: 0;
+}
+.footer .social-icons i {
+    padding: 10px 15px;
+}
+.footer .social-icons a{
+    color: #fafafa;
+    font-size: 20px;
+    transition: var(--main-transition);
+}
+.footer .social-icons a:hover{
+    color: var(--main-color);
+    transition: var(--main-transition);
+}
+.footer .copyright {
+    margin-top: 40px;
+}
+
+.footer .copyright i {
+    color: red;
+}
+
+/* End Footer */
+
+
+/* Start Team.Html */
+.team .card-img-top {
+    background-size: cover;
+}
+
+.team h1 {
+    color: var(--main-color-2);
+}
+
+.team h6 {
+    color: var(--main-color-2);
+}
+
+.team h4 {
+    color: var(--main-color-2);
+    color: #fafafa;
+}
+
+.team i {
+    font-size: 22px;
+    color: #fafafa;
+    transition: var(--main-transition);
+}
+
+.team i:hover {
+    color: var(--main-color);
+}
+
+
+.our-team h1 {
+    color: var(--main-color-2);
+}
+
+.our-team i {
+    font-size: 22px;
+    color: #fafafa;
+    transition: var(--main-transition);
+}
+
+.our-team i:hover {
+    color: var(--main-color);
+}
+
+.our-team h6 {
+    color: var(--main-color-2);
+}
+
+.our-team h5 {
+    color: #fafafa;
+}
+
+.our-team h4 {
+    color: var(--main-color-2);
+    color: #fafafa;
+}
+
+/* end Team.Html */
